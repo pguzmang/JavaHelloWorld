@@ -21,7 +21,5 @@ jobs:
       with:
         java-version: '24'
         distribution: 'temurin'
-    - name: Build with Ant
-      run: |
-      javac HelloWorld.java
-      java HelloWorld
+    - name: run java code directly
+      run: javac HelloWorld.java
