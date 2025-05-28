@@ -21,5 +21,18 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
-    - name: run java code directly
-      run: javac HelloWorld.java
+        
+    - name: Verify Java installation
+      run: |
+        java -version
+        javac -version
+        echo "Java setup complete on Linux"
+        
+    - name: Compile Java program
+      run: javac src/main/java/HelloWorld.java
+      
+    - name: Run Java program
+      run: java -cp src/main/java HelloWorld
+      
+    - name: List generated files
+      run: ls -la src/main/java/*.class
