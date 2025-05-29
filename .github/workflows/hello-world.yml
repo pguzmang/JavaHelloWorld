@@ -33,8 +33,8 @@ jobs:
       
     - name: Run Java program
       run: java -cp src/main/java HelloWorld
-
-      - name: Compile Java program root
+      
+    - name: Compile Java program root
       run: javac HelloWorld.java
       
     - name: Run Java program root
