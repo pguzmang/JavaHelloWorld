@@ -33,6 +33,9 @@ jobs:
       
     - name: Run Java program
       run: java -cp src/main/java HelloWorld
+
+    - name: Compile Root Java program
+      run: javac HelloWorld.java
       
     - name: List generated files
       run: ls -la src/main/java/*.class
