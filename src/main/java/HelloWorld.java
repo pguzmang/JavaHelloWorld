@@ -6,7 +6,7 @@ public class HelloWorld {
         
         // Text blocks (Java 15+)
         String multilineMessage = """
-            Welcome to Java 21!
+            Welcome to Java " +  System.getProperty("java.version") +"!
             This is a modern Hello World example.
             Java continues to evolve with great features.
             """;
