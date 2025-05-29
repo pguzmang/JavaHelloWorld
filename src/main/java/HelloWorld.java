@@ -17,7 +17,7 @@ public class HelloWorld {
         System.out.println("Today is a " + dayType);
         
         // Record classes (Java 14+)
-        Person person = new Person("Java Developer", System.getProperty("java.version"));
+        Person person = new Person("Java Developer", Integer.valueOf(System.getProperty("java.version")));
         System.out.println("Hello from " + person.name() + ", Java version " + person.version());
     }
     
