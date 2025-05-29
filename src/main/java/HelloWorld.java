@@ -5,11 +5,12 @@ public class HelloWorld {
         // Java 21 features demonstration
         
         // Text blocks (Java 15+)
+       String javaVersion = System.getProperty("java.version");
         String multilineMessage = """
-            Welcome to Java " +  System.getProperty("java.version") +"!
+            Welcome to Java %s!
             This is a modern Hello World example.
             Java continues to evolve with great features.
-            """;
+            """.formatted(javaVersion);
         System.out.println(multilineMessage);
         
         // Pattern matching with switch expressions (Java 17+, enhanced in 21)
